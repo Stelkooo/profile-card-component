@@ -8,7 +8,7 @@ export default function Info() {
       <Image
         src={ProfileImage}
         alt="Photograph of Victor"
-        className="absolute -top-12 aspect-square w-[101px] rounded-full border-[5px] border-white"
+        className="absolute -top-12 aspect-square w-24 rounded-full border-[5px] border-white"
       />
       <div className="flex flex-col gap-2 text-center">
         <p>
