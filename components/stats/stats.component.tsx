@@ -12,10 +12,24 @@ const stats: Stat[] = [
 ];
 
 export default function Stats() {
+  const getJustifySelf = (index: number) => {
+    if (index === 0) {
+      return 'justify-self-start';
+    }
+    if (index === 1) {
+      return 'justify-self-center';
+    }
+    return 'justify-self-end';
+  };
   return (
-    <div className="flex justify-between border-t border-t-light-gray px-10 py-6 text-center">
-      {stats.map((stat) => (
-        <div key={stat.name}>
+    <div className="grid grid-cols-3 justify-between border-t border-t-light-gray px-12 py-6">
+      {stats.map((stat, index) => (
+        <div
+          key={stat.name}
+          className={`flex flex-col gap-[5px] ${getJustifySelf(
+            index
+          )} text-center`}
+        >
           <p className="uppercase">
             {/* <Counter to={stat.amount} />k */}
             {stat.amount}k
