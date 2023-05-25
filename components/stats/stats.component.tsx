@@ -31,8 +31,7 @@ export default function Stats() {
           )} text-center`}
         >
           <p className="uppercase">
-            {/* <Counter to={stat.amount} />k */}
-            {stat.amount}k
+            <Counter to={stat.amount} />k
           </p>
           <p className="text-[10px]/3 font-normal tracking-[1.5px] text-dark-grayish-blue">
             {stat.name}

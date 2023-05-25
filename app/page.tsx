@@ -30,7 +30,7 @@ export default function Home() {
     },
   };
   return (
-    <motion.main className="h-full">
+    <motion.main variants={mainVariants} animate="bgColor" className="h-full">
       <div className="grid h-full place-content-center">
         <motion.article
           variants={articleVariants}
