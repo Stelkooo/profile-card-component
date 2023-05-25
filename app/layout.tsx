@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${kumbhSans.className} h-full`}>{children}</body>
+      <body className={`${kumbhSans.className} h-full bg-dark-cyan`}>
+        {children}
+      </body>
     </html>
   );
 }

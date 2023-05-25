@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  p {
+    @apply text-lg/[22px];
+    @apply font-bold;
+    @apply text-very-dark-desaturated-blue;
+  }
+}
+
+body {
+  background-image: url('/images/bg-pattern-top.svg'),
+    url('/images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 622px 621px, 622px 621px;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: 978px 976px, 978px 976px;
+    background-position: right 52vw bottom 37vh, left 50vw top 50vh;
+  }
+}
