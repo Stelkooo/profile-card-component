@@ -10,16 +10,17 @@
   }
 }
 
-body {
+main {
   background-image: url('/images/bg-pattern-top.svg'),
     url('/images/bg-pattern-bottom.svg');
   background-repeat: no-repeat, no-repeat;
   background-size: 622px 621px, 622px 621px;
   background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-blend-mode: darken;
 }
 
 @media screen and (min-width: 1024px) {
-  body {
+  main {
     background-size: 978px 976px, 978px 976px;
     background-position: right 52vw bottom 37vh, left 50vw top 50vh;
   }
